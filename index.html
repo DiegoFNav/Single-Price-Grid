@@ -13,6 +13,10 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
   <div id="card">
@@ -26,14 +30,13 @@
     <div id="bottom-section">
       <div id="bottom-left-section">
         <h4>Monthly Subscription</h4>
-        <div>
-          <div>$29</div>
-          <div>per month</div>
+        <div id="price-container">
+          <div id="price">$29</div>
+          <div id="price-frequency">per month</div>
         </div>
         <p>Full access for less than $1 a day</p>
-        <button>Sign Up</button>
-      </div>
-      <div id="bottom-right-section">
+        <button onclick="alertUser()">Sign Up</button>
+      </div><div id="bottom-right-section">
         <h4>Why Us</h4>
         <ul>
           <li>Tutorials by industry experts</li>
@@ -49,6 +52,6 @@
     </div>
     
   </div>
-
+  <script src="./script.js"></script>
 </body>
 </html>
